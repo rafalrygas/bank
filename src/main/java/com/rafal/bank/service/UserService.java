@@ -2,8 +2,8 @@ package com.rafal.bank.service;
 
 import com.rafal.bank.model.User;
 
-import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
-    public List<User> getAllUsers();
+    User getUserByUsername(String username);
 }

@@ -5,5 +5,5 @@ import com.rafal.bank.model.User;
 import java.util.List;
 
 public interface UserRepository {
-    List<User> findAllEmployees();
+    User findByUsername(String username);
 }

@@ -19,8 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.rafal.bank.config" })
-@PropertySource(value = { "classpath:application.properties" })
+@PropertySource(value = {"classpath:application.properties"})
 public class HibernateConfiguration {
 
     @Autowired
@@ -30,7 +29,7 @@ public class HibernateConfiguration {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(getDataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.rafal.bank" });
+        sessionFactory.setPackagesToScan(new String[]{"com.rafal.bank"});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }

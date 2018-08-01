@@ -1,5 +1,7 @@
 package com.rafal.bank.config;
 
+import com.rafal.bank.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,8 +14,11 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.rafal.bank")
+@ComponentScan("com.rafal.bank.*")
 public class AppConfig {
+
+    @Autowired
+    UserRepository userRepository;
 
     @Bean
     public ViewResolver viewResolver() {

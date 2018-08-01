@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -18,8 +19,19 @@ public class UserRepositoryImpl implements UserRepository {
     @Autowired
     SessionFactory sessionFactory;
 
-    public List<User> findAllEmployees() {
-        List<User> result = (List<User>) sessionFactory.getCurrentSession().createQuery("from User").list();
-        return result;
+    @Override
+    public User findByUsername(String username) {
+
+        List<User> users = sessionFactory.getCurrentSession()
+                .createQuery("from User where username=?")
+                .setParameter(0, username)
+                .list();
+
+        if (users.size() > 0) {
+            return users.get(0);
+        } else {
+            return null;
+        }
+
     }
 }

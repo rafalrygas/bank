@@ -11,9 +11,8 @@
 <section>
     <div class="jumbotron">
         <div class="container">
-            <h1> ${users.id} </h1>
-            <h1> ${users.name} </h1>
-            <h1> ${users.surname} </h1>
+            <h1> ${users.username} </h1>
+            <h1> ${users.password} </h1>
         </div>
     </div>
 </section>
