@@ -1,45 +1,72 @@
 package com.rafal.bank.model;
 
+import org.hibernate.validator.constraints.Length;
+
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 @Entity
 @Table(name = "users")
 public class User {
 
     @Id
-    @Column(name = "username", unique = true,
-            nullable = false, length = 45)
+    @Column(name = "username", unique = true)
+    @Length(min = 1, message = "username cannot be empty and must be unique")
     private String username;
-    @Column(name = "password",
-            nullable = false, length = 60)
+    @Length(min = 1, message = "password should have at least 5 characters")
+    @Column(name = "password")
     private String password;
-    @Column(name = "enabled", nullable = false)
+    @Column(name = "enabled")
     private boolean enabled;
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    @Column(name = "name")
+    @Length(min = 1, message = "Name cannot be empty")
+    private String name;
+    @Column(name = "surname")
+    @Length(min = 1, message = "Surname cannot be empty")
+    private String surname;
+    @Column(name = "street")
+    @Length(min = 1, message = "Street cannot be empty")
+    private String street;
+    @Column(name = "city")
+    @Length(min = 1, message = "City cannot be empty")
+    private String city;
+    @Column(name = "country")
+    @Length(min = 1, message = "Country cannot be empty")
+    private String country;
+    @Column(name = "houseNumber")
+    @Length(min = 1, message = "House number cannot be empty")
+    @Pattern(regexp="[0-9]+", message="Wrong house number!")
+    private String houseNumber;
+    @Column(name = "flatNumber")
+    private String flatNumber;
+    @Column(name = "phoneNumber")
+    @Min(value = 1, message = "Phone Number cannot be empty")
+    private String phoneNumber;
+    @Column(name = "additionalPhoneNumber")
+    private String additionalPhoneNumber;
+    @Column(name = "email")
+    @Pattern(regexp=".+@.+\\..+", message="Wrong email!")
+    private String email;
+    @Column(name = "pesel")
+    @Pattern(regexp="[0-9]+", message="Wrong Pesel!")
+    private String pesel;
+    @Column(name = "zipCode")
+    @Pattern(regexp="[0-9]+", message="Wrong zip!")
+    private String zipCode;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
     private Set<UserRole> userRole = new HashSet<UserRole>(0);
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+    private Set<Document> document = new HashSet<Document>(0);
 
     public User() {
     }
 
-    public User(String username, String password, boolean enabled) {
-        this.username = username;
-        this.password = password;
-        this.enabled = enabled;
-    }
-
-    public User(String username, String password,
-                boolean enabled, Set<UserRole> userRole) {
-        this.username = username;
-        this.password = password;
-        this.enabled = enabled;
-        this.userRole = userRole;
+    public boolean isNew() {
+        return (this.username == null);
     }
 
     public String getUsername() {
@@ -74,4 +101,107 @@ public class User {
         this.userRole = userRole;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getHouseNumber() {
+        return houseNumber;
+    }
+
+    public void setHouseNumber(String houseNumber) {
+        this.houseNumber = houseNumber;
+    }
+
+    public String getFlatNumber() {
+        return flatNumber;
+    }
+
+    public void setFlatNumber(String flatNumber) {
+        this.flatNumber = flatNumber;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getAdditionalPhoneNumber() {
+        return additionalPhoneNumber;
+    }
+
+    public void setAdditionalPhoneNumber(String additionalPhoneNumber) {
+        this.additionalPhoneNumber = additionalPhoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
+
+    public void setPesel(String pesel) {
+        this.pesel = pesel;
+    }
+
+    public Set<Document> getDocument() {
+        return document;
+    }
+
+    public void setDocument(Set<Document> document) {
+        this.document = document;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
 }

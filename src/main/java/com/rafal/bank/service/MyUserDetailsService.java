@@ -31,6 +31,9 @@ public class MyUserDetailsService implements UserDetailsService {
             throws UsernameNotFoundException {
 
         com.rafal.bank.model.User user = userRepository.findByUsername(username);
+        if (user == null) {
+            throw new UsernameNotFoundException("User not found");
+        }
         List<GrantedAuthority> authorities =
                 buildUserAuthority(user.getUserRole());
 

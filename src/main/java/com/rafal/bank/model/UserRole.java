@@ -1,15 +1,9 @@
 package com.rafal.bank.model;
 
 import static javax.persistence.GenerationType.IDENTITY;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+
+import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "user_roles",
@@ -22,7 +16,7 @@ public class UserRole{
     @Column(name = "user_role_id",
             unique = true, nullable = false)
     private Integer userRoleId;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "username", nullable = false)
     private User user;
     @Column(name = "role", nullable = false, length = 45)
@@ -60,4 +54,22 @@ public class UserRole{
         this.role = role;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserRole userRole = (UserRole) o;
+        return Objects.equals(user, userRole.user) &&
+                Objects.equals(role, userRole.role);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(user, role);
+    }
+
+    @Override
+    public String toString() {
+        return role;
+    }
 }

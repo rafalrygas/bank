@@ -26,7 +26,7 @@ public class HibernateConfiguration {
     private Environment environment;
 
     @Bean
-    public LocalSessionFactoryBean getSessionFactory() {
+    public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(getDataSource());
         sessionFactory.setPackagesToScan(new String[]{"com.rafal.bank"});
@@ -56,7 +56,7 @@ public class HibernateConfiguration {
     @Bean
     public HibernateTransactionManager transactionManager() {
         HibernateTransactionManager txManager = new HibernateTransactionManager();
-        txManager.setSessionFactory(getSessionFactory().getObject());
+        txManager.setSessionFactory(sessionFactory().getObject());
         return txManager;
     }
 }
