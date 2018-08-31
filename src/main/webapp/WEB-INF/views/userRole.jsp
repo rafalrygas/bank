@@ -12,21 +12,17 @@
 
     <c:if test="${not empty msg}">
         <div class="alert alert-${css} alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert"
-                    aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
             <strong>${msg}</strong>
         </div>
     </c:if>
 
-    <h1>Roles</h1>
+    <h1><spring:message code="userRole.Roles"></spring:message></h1>
 
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Role</th>
-            <th>Action</th>
+            <th><spring:message code="userRole.Role"></spring:message></th>
+            <th><spring:message code="userRole.Action"></spring:message></th>
         </tr>
         </thead>
 
@@ -37,13 +33,13 @@
                     <spring:url value="/secure/admin/users/${userRole.user.username}/roles/${userRole.userRoleId}/delete" var="deleteUrl" />
 
                     <button class="btn btn-danger"
-                            onclick="location.href='${deleteUrl}'">Delete</button>
+                            onclick="location.href='${deleteUrl}'"><spring:message code="userRole.Delete"></spring:message></button>
                 </td>
             </tr>
         </c:forEach>
     </table>
 
-    <a href="${pageContext.request.contextPath}/secure/admin/users/${user}/roles/add">Add roles</a>
+    <a href="${pageContext.request.contextPath}/secure/admin/users/${user}/roles/add"><spring:message code="userRole.Add"></spring:message></a>
 
 </div>
 

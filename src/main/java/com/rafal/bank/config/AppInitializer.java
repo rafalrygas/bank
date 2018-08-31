@@ -27,7 +27,6 @@ public class AppInitializer implements WebApplicationInitializer {
         dispatcher.addMapping("/");
 
 
-
         FilterRegistration.Dynamic filter = servletContext.addFilter("openSessionInViewFilter", OpenSessionInViewFilter.class);
         filter.addMappingForServletNames(null, false, "SpringDispatcher");
 

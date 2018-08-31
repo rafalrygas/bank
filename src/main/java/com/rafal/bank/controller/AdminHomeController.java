@@ -125,7 +125,7 @@ public class AdminHomeController {
         Set<UserRole> userRoles = user.getUserRole();
         model.addAttribute("userRoles", userRoles);
         model.addAttribute("user", user.getUsername());
-        return "userRoleForm";
+        return "userRole";
 
     }
 

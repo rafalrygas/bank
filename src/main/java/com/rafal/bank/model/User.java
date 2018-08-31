@@ -1,13 +1,14 @@
 package com.rafal.bank.model;
 
+
 import org.hibernate.validator.constraints.Length;
 
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.*;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+
 
 @Entity
 @Table(name = "users")
@@ -15,47 +16,47 @@ public class User {
 
     @Id
     @Column(name = "username", unique = true)
-    @Length(min = 1, message = "username cannot be empty and must be unique")
+    @Length(min = 1, message = "{userFormValidator.username.empty}")
     private String username;
-    @Length(min = 1, message = "password should have at least 5 characters")
+    @Length(min = 1, message = "{userFormValidator.password.minCharacters}")
     @Column(name = "password")
     private String password;
     @Column(name = "enabled")
     private boolean enabled;
     @Column(name = "name")
-    @Length(min = 1, message = "Name cannot be empty")
+    @Length(min = 1, message = "{userFormValidator.name.empty}")
     private String name;
     @Column(name = "surname")
-    @Length(min = 1, message = "Surname cannot be empty")
+    @Length(min = 1, message = "{userFormValidator.surname.empty}")
     private String surname;
     @Column(name = "street")
-    @Length(min = 1, message = "Street cannot be empty")
+    @Length(min = 1, message = "{userFormValidator.street.empty}")
     private String street;
     @Column(name = "city")
-    @Length(min = 1, message = "City cannot be empty")
+    @Length(min = 1, message = "{userFormValidator.city.empty}")
     private String city;
     @Column(name = "country")
-    @Length(min = 1, message = "Country cannot be empty")
+    @Length(min = 1, message = "{userFormValidator.country.empty}")
     private String country;
     @Column(name = "houseNumber")
-    @Length(min = 1, message = "House number cannot be empty")
-    @Pattern(regexp="[0-9]+", message="Wrong house number!")
+    @Length(min = 1, message = "{userFormValidator.houseNumber.empty}")
+    @Pattern(regexp="[0-9]+", message="{userFormValidator.houseNumber.number}")
     private String houseNumber;
     @Column(name = "flatNumber")
     private String flatNumber;
     @Column(name = "phoneNumber")
-    @Min(value = 1, message = "Phone Number cannot be empty")
+    @Min(value = 1, message = "{userFormValidator.phoneNumber.empty}")
     private String phoneNumber;
     @Column(name = "additionalPhoneNumber")
     private String additionalPhoneNumber;
     @Column(name = "email")
-    @Pattern(regexp=".+@.+\\..+", message="Wrong email!")
+    @Pattern(regexp=".+@.+\\..+", message="{userFormValidator.email.wrong}")
     private String email;
     @Column(name = "pesel")
-    @Pattern(regexp="[0-9]+", message="Wrong Pesel!")
+    @Pattern(regexp="[0-9]+", message="{userFormValidator.pesel.wrong}")
     private String pesel;
     @Column(name = "zipCode")
-    @Pattern(regexp="[0-9]+", message="Wrong zip!")
+    @Pattern(regexp="[0-9]+", message="{userFormValidator.zip.wrong}")
     private String zipCode;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
     private Set<UserRole> userRole = new HashSet<UserRole>(0);

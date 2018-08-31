@@ -5,7 +5,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!DOCTYPE html>
-<html lang="en">
 
 <div class="container">
 
@@ -15,76 +14,78 @@
         </div>
     </c:if>
 
-    <h1>User Detail</h1>
+    <h1><spring:message code="show.userDetails"></spring:message></h1>
     <br/>
 
     <div class="row">
-        <label class="col-sm-2">username</label>
+        <label class="col-sm-2">
+            <spring:message code="show.username"></spring:message>
+        </label>
         <div class="col-sm-10">${user.username}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">name</label>
+        <label class="col-sm-2"><spring:message code="show.name"></spring:message></label>
         <div class="col-sm-10">${user.name}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">surname</label>
+        <label class="col-sm-2"><spring:message code="show.surname"></spring:message></label>
         <div class="col-sm-10">${user.surname}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">pesel</label>
+        <label class="col-sm-2"><spring:message code="show.pesel"></spring:message></label>
         <div class="col-sm-10">${user.pesel}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">phoneNumber</label>
+        <label class="col-sm-2"><spring:message code="show.phoneNumber"></spring:message></label>
         <div class="col-sm-10">${user.phoneNumber}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">additionalPhoneNumber</label>
+        <label class="col-sm-2"><spring:message code="show.additionalPhoneNumber"></spring:message></label>
         <div class="col-sm-10">${user.additionalPhoneNumber}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">email</label>
+        <label class="col-sm-2"><spring:message code="show.email"></spring:message></label>
         <div class="col-sm-10">${user.email}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">street</label>
+        <label class="col-sm-2"><spring:message code="show.street"></spring:message></label>
         <div class="col-sm-10">${user.street}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">houseNumber</label>
+        <label class="col-sm-2"><spring:message code="show.houseNumber"></spring:message></label>
         <div class="col-sm-10">${user.houseNumber}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">flatNumber</label>
+        <label class="col-sm-2"><spring:message code="show.flatNumber"></spring:message></label>
         <div class="col-sm-10">${user.flatNumber}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">zipCode</label>
+        <label class="col-sm-2"><spring:message code="show.zipCode"></spring:message></label>
         <div class="col-sm-10">${user.zipCode}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">city</label>
+        <label class="col-sm-2"><spring:message code="show.city"></spring:message></label>
         <div class="col-sm-10">${user.city}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">country</label>
+        <label class="col-sm-2"><spring:message code="show.country"></spring:message></label>
         <div class="col-sm-10">${user.country}</div>
     </div>
 
     <div class="row">
-        <label class="col-sm-2">enabled</label>
+        <label class="col-sm-2"><spring:message code="show.enabled"></spring:message></label>
         <div class="col-sm-10">${user.enabled}</div>
     </div>
 
@@ -96,7 +97,7 @@
         </tr>
     </c:forEach>
 
-    <a href="${pageContext.request.contextPath}/secure/admin/users/${user.username}/roles">Edit roles</a>
+    <a href="${pageContext.request.contextPath}/secure/admin/users/${user.username}/roles"><spring:message code="show.editRoles"></spring:message></a>
 
 </div>
 

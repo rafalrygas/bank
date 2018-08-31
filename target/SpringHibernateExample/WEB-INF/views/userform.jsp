@@ -16,7 +16,7 @@
 
         <spring:bind path="username">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Username</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.username"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="username" type="text" class="form-control"
                                 id="username" placeholder="Username"/>
@@ -27,7 +27,7 @@
 
         <spring:bind path="password">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Password</label>
+            <label class="col-sm-2 control-label"><spring:message code="show.password"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="password" class="form-control"
                                 id="password" placeholder="Password"/>
@@ -38,7 +38,7 @@
 
         <spring:bind path="name">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Name</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.name"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="name" class="form-control"
                                 id="name" placeholder="name"/>
@@ -49,7 +49,7 @@
 
         <spring:bind path="surname">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Surname</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.surname"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="surname" class="form-control"
                                 id="surname" placeholder="surname"/>
@@ -60,7 +60,7 @@
 
         <spring:bind path="street">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Street</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.street"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="street" class="form-control"
                                 id="street" placeholder="street"/>
@@ -71,7 +71,7 @@
 
         <spring:bind path="city">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">City</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.city"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="city" class="form-control"
                                 id="city" placeholder="city"/>
@@ -82,7 +82,7 @@
 
         <spring:bind path="country">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Country</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.country"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="country" class="form-control"
                                 id="country" placeholder="country"/>
@@ -93,7 +93,7 @@
 
         <spring:bind path="houseNumber">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">House Number</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.houseNumber"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="houseNumber" class="form-control"
                                 id="houseNumber" placeholder="houseNumber"/>
@@ -104,7 +104,7 @@
 
         <spring:bind path="flatNumber">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Flat Number</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.flatNumber"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="flatNumber" class="form-control"
                                 id="flatNumber" placeholder="flatNumber"/>
@@ -115,7 +115,7 @@
 
         <spring:bind path="phoneNumber">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Phone Number</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.phoneNumber"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="phoneNumber" class="form-control"
                                 id="phoneNumber" placeholder="phoneNumber"/>
@@ -126,7 +126,7 @@
 
         <spring:bind path="additionalPhoneNumber">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Additional Phone Number</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.additionalPhoneNumber"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="additionalPhoneNumber" class="form-control"
                                 id="additionalPhoneNumber" placeholder="additionalPhoneNumber"/>
@@ -136,7 +136,7 @@
         </spring:bind>
         <spring:bind path="email">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">E-mail</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.email"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="email" class="form-control"
                                 id="email" placeholder="email"/>
@@ -146,7 +146,7 @@
         </spring:bind>
         <spring:bind path="pesel">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Pesel</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.pesel"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="pesel" class="form-control"
                                 id="pesel" placeholder="pesel"/>
@@ -158,7 +158,7 @@
 
         <spring:bind path="zipCode">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Zip Code</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.zipCode"></spring:message></label>
                 <div class="col-sm-10">
                     <form:input path="zipCode" class="form-control"
                                 id="zipCode" placeholder="zipCode"/>
@@ -169,13 +169,13 @@
 
         <spring:bind path="Enabled">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Enabled</label>
+                <label class="col-sm-2 control-label"><spring:message code="show.enabled"></spring:message></label>
                 <div class="col-sm-10">
                     <label class="radio-inline">
-                        <form:radiobutton path="enabled" value="True"/> True
+                        <form:radiobutton path="enabled" value="True"/> <spring:message code="show.true"></spring:message>
                     </label>
                     <label class="radio-inline">
-                        <form:radiobutton path="enabled" value="False"/> False
+                        <form:radiobutton path="enabled" value="False"/> <spring:message code="show.false"></spring:message>
                     </label> <br/>
                     <form:errors path="enabled" class="control-label"/>
                 </div>
@@ -184,7 +184,7 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn-lg btn-primary pull-right">Add
+                <button type="submit" class="btn-lg btn-primary pull-right"><spring:message code="show.add"></spring:message>
                 </button>
             </div>
         </div>

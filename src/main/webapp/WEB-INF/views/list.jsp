@@ -20,17 +20,17 @@
         </div>
     </c:if>
 
-    <a href="${pageContext.request.contextPath}/secure/admin/users/add">Add User</a>
+    <a href="${pageContext.request.contextPath}/secure/admin/users/add"><spring:message code="list.addUser"></spring:message></a>
 
-    <h1>All Users</h1>
+    <h1><spring:message code="list.allUsers"></spring:message></h1>
 
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Username</th>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Action</th>
+            <th><spring:message code="list.username"></spring:message></th>
+            <th><spring:message code="list.name"></spring:message></th>
+            <th><spring:message code="list.surname"></spring:message></th>
+            <th><spring:message code="list.action"></spring:message></th>
         </tr>
         </thead>
 
@@ -47,11 +47,11 @@
                     <spring:url value="/secure/admin/users/${user.username}/update" var="updateUrl" />
 
                     <button class="btn btn-info"
-                            onclick="location.href='${userUrl}'">Query</button>
+                            onclick="location.href='${userUrl}'"><spring:message code="list.query"></spring:message></button>
                     <button class="btn btn-primary"
-                            onclick="location.href='${updateUrl}'">Update</button>
+                            onclick="location.href='${updateUrl}'"><spring:message code="list.update"></spring:message></button>
                     <button class="btn btn-danger"
-                            onclick="location.href='${deleteUrl}'">Delete</button>
+                            onclick="location.href='${deleteUrl}'"><spring:message code="list.delete"></spring:message></button>
                 </td>
             </tr>
         </c:forEach>
