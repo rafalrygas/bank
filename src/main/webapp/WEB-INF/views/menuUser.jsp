@@ -16,4 +16,31 @@
 
     </c:if>
 
+    <div class="container">
+
+        <h1><spring:message code="menuUser.accounts"></spring:message></h1>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th><spring:message code="menuUser.account"></spring:message></th>
+                <th><spring:message code="menuUser.state"></spring:message></th>
+            </tr>
+            </thead>
+
+            <c:forEach var="account" items="${accounts}">
+                <tr>
+                    <td>
+                        <a href="${pageContext.request.contextPath}/secure/account/${account.accountNumber}">${account.accountNumber}</a>
+                    </td>
+                    <td>
+                        ${account.state}
+                    </td>
+                </tr>
+            </c:forEach>
+        </table>
+
+    </div>
+
+
 </div>

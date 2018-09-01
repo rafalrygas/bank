@@ -5,12 +5,16 @@ import com.rafal.bank.model.UserRole;
 import com.rafal.bank.service.UserRoleService;
 import com.rafal.bank.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.ArrayList;
@@ -27,6 +31,9 @@ public class AdminHomeController {
 
     @Autowired
     private UserRoleService userRoleService;
+
+    @Autowired
+    private MessageSource messageSource;
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String adminPage(Model model) {
@@ -49,7 +56,8 @@ public class AdminHomeController {
         User user = userService.getUserByUsername(username);
         if (user == null) {
             model.addAttribute("css", "danger");
-            model.addAttribute("msg", "User not found");
+            model.addAttribute("msg",
+                    messageSource.getMessage("adminHomeController.userNotFound", null, LocaleContextHolder.getLocale()));
         }
         model.addAttribute("user", user);
 
@@ -75,7 +83,8 @@ public class AdminHomeController {
         userService.delete(username);
 
         redirectAttributes.addFlashAttribute("css", "success");
-        redirectAttributes.addFlashAttribute("msg", "User is deleted!");
+        redirectAttributes.addFlashAttribute("msg",
+                messageSource.getMessage("adminHomeController.userDeletedSuccessfully", null, LocaleContextHolder.getLocale()));
 
         return "redirect:/secure/admin/users";
 
@@ -102,12 +111,13 @@ public class AdminHomeController {
             // Add message to flash scope
             redirectAttributes.addFlashAttribute("css", "success");
             if (user.isNew()) {
-                redirectAttributes.addFlashAttribute("msg", "User added successfully!");
+                redirectAttributes.addFlashAttribute("msg",
+                        messageSource.getMessage("adminHomeController.userAddedSuccessfully", null, LocaleContextHolder.getLocale()));
             } else {
-                redirectAttributes.addFlashAttribute("msg", "User updated successfully!");
+                redirectAttributes.addFlashAttribute("msg",
+                        messageSource.getMessage("adminHomeController.userUpdatedSuccessfully", null, LocaleContextHolder.getLocale()));
             }
 
-            System.out.println("Saving user");
             userService.saveOrUpdate(user);
 
             // POST/REDIRECT/GET
@@ -146,8 +156,8 @@ public class AdminHomeController {
 
     @RequestMapping(value = "users/{username}/roles/add", method = RequestMethod.POST)
     public String addUserRole(@PathVariable("username") String username, @ModelAttribute("userRole") @Validated UserRole userRole,
-                                   BindingResult result, Model model,
-                                   final RedirectAttributes redirectAttributes) {
+                              BindingResult result, Model model,
+                              final RedirectAttributes redirectAttributes) {
         User user = userService.getUserByUsername(username);
         user.getUserRole().add(new UserRole(user, userRole.getRole()));
         userService.saveOrUpdate(user);
@@ -157,12 +167,13 @@ public class AdminHomeController {
 
     @RequestMapping(value = "/users/{username}/roles/{userRoleId}/delete", method = RequestMethod.GET)
     public String deleteUserRole(@PathVariable("username") String username, @PathVariable("userRoleId") int userRoleId,
-                             final RedirectAttributes redirectAttributes) {
+                                 final RedirectAttributes redirectAttributes) {
 
         userRoleService.delete(userRoleId);
 
         redirectAttributes.addFlashAttribute("css", "success");
-        redirectAttributes.addFlashAttribute("msg", "UserRole is deleted!");
+        redirectAttributes.addFlashAttribute("msg",
+                messageSource.getMessage("adminHomeController.userRoleDeletedSuccessfully", null, LocaleContextHolder.getLocale()));
 
         return "redirect:/secure/admin/users/{username}/roles";
 

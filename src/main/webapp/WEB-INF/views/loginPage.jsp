@@ -7,7 +7,9 @@
 
 
 <h1><spring:message code="loginPage.login"></spring:message></h1>
-
+<div class="pull-right" style="padding-right: 50px">
+    <a href="?language=pl">Polski</a>|<a href="?language=en">English</a>
+</div>
 <!-- /login?error=true -->
 <c:if test="${param.error == 'true'}">
     <div style="color:red;margin:10px 0px;">

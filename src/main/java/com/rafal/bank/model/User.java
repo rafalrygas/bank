@@ -4,6 +4,7 @@ package com.rafal.bank.model;
 import org.hibernate.validator.constraints.Length;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -62,8 +63,18 @@ public class User {
     private Set<UserRole> userRole = new HashSet<UserRole>(0);
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
     private Set<Document> document = new HashSet<Document>(0);
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "users")
+    private Set<Account> accounts = new HashSet<Account>(0);
 
     public User() {
+    }
+
+    public Set<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(Set<Account> accounts) {
+        this.accounts = accounts;
     }
 
     public boolean isNew() {
@@ -204,5 +215,32 @@ public class User {
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return enabled == user.enabled &&
+                Objects.equals(username, user.username) &&
+                Objects.equals(password, user.password) &&
+                Objects.equals(name, user.name) &&
+                Objects.equals(surname, user.surname) &&
+                Objects.equals(street, user.street) &&
+                Objects.equals(city, user.city) &&
+                Objects.equals(country, user.country) &&
+                Objects.equals(houseNumber, user.houseNumber) &&
+                Objects.equals(flatNumber, user.flatNumber) &&
+                Objects.equals(phoneNumber, user.phoneNumber) &&
+                Objects.equals(additionalPhoneNumber, user.additionalPhoneNumber) &&
+                Objects.equals(email, user.email) &&
+                Objects.equals(pesel, user.pesel) &&
+                Objects.equals(zipCode, user.zipCode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username);
     }
 }
