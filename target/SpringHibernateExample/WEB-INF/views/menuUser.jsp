@@ -9,6 +9,10 @@
 
     <a href="${pageContext.request.contextPath}/secure/userinfo"><spring:message code="menuUser.userInfo"></spring:message></a>
 
+    | &nbsp;
+
+    <a href="${pageContext.request.contextPath}/secure/maketransfer"><spring:message code="menuUser.makeTransfer"></spring:message></a>
+
     <c:if test="${pageContext.request.userPrincipal.name != null}">
 
         | &nbsp;

@@ -17,7 +17,7 @@ public class Document {
             unique = true, nullable = false)
     private Integer documentId;
     @Column(name = "documentNumber", unique = true, nullable = false)
-    private String getDocumentNumber;
+    private String DocumentNumber;
     @ManyToOne
     @JoinColumn(name = "username", nullable = false)
     private User user;
@@ -42,11 +42,11 @@ public class Document {
     }
 
     public String getGetDocumentNumber() {
-        return getDocumentNumber;
+        return DocumentNumber;
     }
 
     public void setGetDocumentNumber(String getDocumentNumber) {
-        this.getDocumentNumber = getDocumentNumber;
+        this.DocumentNumber = getDocumentNumber;
     }
 
     public User getUser() {

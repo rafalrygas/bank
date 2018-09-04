@@ -2,6 +2,7 @@ package com.rafal.bank.model;
 
 import javax.persistence.*;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 import static javax.persistence.GenerationType.IDENTITY;
@@ -16,7 +17,7 @@ public class Transfer {
     private Integer id;
 
     @Column(name = "amount", nullable = false, columnDefinition = "Decimal(10,2)")
-    private double amount;
+    private BigDecimal amount;
 
     @Column(name = "title", nullable = false)
     private String title;
@@ -24,20 +25,19 @@ public class Transfer {
     @Column(name = "addressRecipient", nullable = false)
     private String addressRecipient;
 
-    @Column(name = "addressSender")
-    private String addressSender;
-
     @Column(name = "dateOfSent", nullable = false)
     private String dateOfSent;
 
     @Column(name = "dateOfReceipt")
     private String dateOfReceipt;
 
-    @Column(name = "accountNumberSender", nullable = false, columnDefinition = "CHAR(28)")
-    private String accountNumberSender;
+    @ManyToOne
+    @JoinColumn(name = "accountNumberSender", nullable = false)
+    private Account accountSender;
 
-    @Column(name = "accountNumberRecipient", nullable = false, columnDefinition = "CHAR(28)")
-    private String accountNumberRecipient;
+    @ManyToOne
+    @JoinColumn(name = "accountNumberRecipient", nullable = false)
+    private Account accountRecipient;
 
     @Column(name = "nameOfSender", nullable = false)
     private String nameOfSender;
@@ -59,11 +59,11 @@ public class Transfer {
         this.id = id;
     }
 
-    public double getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
@@ -83,14 +83,6 @@ public class Transfer {
         this.addressRecipient = addressRecipient;
     }
 
-    public String getAddressSender() {
-        return addressSender;
-    }
-
-    public void setAddressSender(String addressSender) {
-        this.addressSender = addressSender;
-    }
-
     public String getDateOfSent() {
         return dateOfSent;
     }
@@ -107,20 +99,20 @@ public class Transfer {
         this.dateOfReceipt = dateOfReceipt;
     }
 
-    public String getAccountNumberSender() {
-        return accountNumberSender;
+    public Account getAccountSender() {
+        return accountSender;
     }
 
-    public void setAccountNumberSender(String accountNumberSender) {
-        this.accountNumberSender = accountNumberSender;
+    public void setAccountSender(Account accountSender) {
+        this.accountSender = accountSender;
     }
 
-    public String getAccountNumberRecipient() {
-        return accountNumberRecipient;
+    public Account getAccountRecipient() {
+        return accountRecipient;
     }
 
-    public void setAccountNumberRecipient(String accountNumberRecipient) {
-        this.accountNumberRecipient = accountNumberRecipient;
+    public void setAccountRecipient(Account accountRecipient) {
+        this.accountRecipient = accountRecipient;
     }
 
     public String getNameOfSender() {
@@ -154,11 +146,8 @@ public class Transfer {
                 ", amount=" + amount +
                 ", title='" + title + '\'' +
                 ", addressRecipient='" + addressRecipient + '\'' +
-                ", addressSender='" + addressSender + '\'' +
                 ", dateOfSent='" + dateOfSent + '\'' +
                 ", dateOfReceipt='" + dateOfReceipt + '\'' +
-                ", accountNumberSender='" + accountNumberSender + '\'' +
-                ", accountNumberRecipient='" + accountNumberRecipient + '\'' +
                 ", nameOfSender='" + nameOfSender + '\'' +
                 ", nameOfRecipient='" + nameOfRecipient + '\'' +
                 ", statusOfTransfer='" + statusOfTransfer + '\'' +
@@ -170,15 +159,11 @@ public class Transfer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Transfer transfer = (Transfer) o;
-        return Double.compare(transfer.amount, amount) == 0 &&
-                Objects.equals(id, transfer.id) &&
+        return Objects.equals(id, transfer.id) &&
                 Objects.equals(title, transfer.title) &&
                 Objects.equals(addressRecipient, transfer.addressRecipient) &&
-                Objects.equals(addressSender, transfer.addressSender) &&
                 Objects.equals(dateOfSent, transfer.dateOfSent) &&
                 Objects.equals(dateOfReceipt, transfer.dateOfReceipt) &&
-                Objects.equals(accountNumberSender, transfer.accountNumberSender) &&
-                Objects.equals(accountNumberRecipient, transfer.accountNumberRecipient) &&
                 Objects.equals(nameOfSender, transfer.nameOfSender) &&
                 Objects.equals(nameOfRecipient, transfer.nameOfRecipient) &&
                 Objects.equals(statusOfTransfer, transfer.statusOfTransfer);
@@ -186,6 +171,6 @@ public class Transfer {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, amount, title, addressRecipient, addressSender, dateOfSent, dateOfReceipt, accountNumberSender, accountNumberRecipient, nameOfSender, nameOfRecipient, statusOfTransfer);
+        return Objects.hash(id, amount, title, addressRecipient, dateOfSent, dateOfReceipt, nameOfSender, nameOfRecipient, statusOfTransfer);
     }
 }
