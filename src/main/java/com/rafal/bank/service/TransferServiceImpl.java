@@ -15,6 +15,9 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
 
 @Service
 public class TransferServiceImpl implements TransferService {
@@ -36,11 +39,17 @@ public class TransferServiceImpl implements TransferService {
        return transferRepository.findById(id);
     }
 
+    @Override
+    public List<Transfer> getTransfersByAccountNumber(Account account) {
+        return transferRepository.getTransfersByAccountNumber(account);
+    }
+
     @Transactional
     public Integer startTransfer(MoneyTransferForm moneyTransferForm) {
         Transfer transfer = createTransfer(moneyTransferForm);
         transferRepository.save(transfer);
-        securityCodeService.sendCode();
+        securityCodeService.saveSecurityCode(transfer.getId());
+        securityCodeService.sendCode(transfer.getId());
         return transfer.getId();
     }
 
@@ -59,9 +68,9 @@ public class TransferServiceImpl implements TransferService {
     }
 
     @Transactional
-    public boolean checkTransfer(Integer transferId, Integer checkCode) {
-        Transfer transfer = transferRepository.findById(4);
-        if (0 == 0) {
+    public boolean checkTransfer(Integer transferId, String securityCode) {
+        Transfer transfer = transferRepository.findById(transferId);
+        if (securityCodeService.compareCodes(transferId, securityCode)) {
             transfer.setStatusOfTransfer("Confirmed");
             transferRepository.save(transfer);
             System.out.println("TRANSFER CONFIRMED");
@@ -69,6 +78,7 @@ public class TransferServiceImpl implements TransferService {
             return true;
         } else {
             transfer.setStatusOfTransfer("Rejected");
+            System.out.println("TRANSFER REJECTED");
             transferRepository.save(transfer);
             return false;
         }
@@ -84,4 +94,5 @@ public class TransferServiceImpl implements TransferService {
         transferRepository.save(transfer);
         System.out.println("FINISHED TRANSFER");
     }
+
 }

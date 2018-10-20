@@ -9,12 +9,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title><spring:message code="moneyTransferForm.moneyTransfer"></spring:message></title>
 </head>
+
 <body>
 <div align="center">
 
     <spring:url value="/secure/maketransfer" var="userActionUrl"/>
 
-    <form:form action="${userActionUrl}" method="post" commandName="moneyTransferForm">
+    <form:form action="${userActionUrl}" method="post" commandName="moneyTransferForm" id="moneyTransferForm">
         <table border="0">
             <tr>
                 <td><spring:message code="moneyTransferForm.title"></spring:message>:</td>

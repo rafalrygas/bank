@@ -1,41 +1,52 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <html>
-<head><title><spring:message code="loginPage.login"></spring:message></title></head>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#form1').validate({
+                rules: {
+                    username: {
+                        required: true
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
 <body>
+<div class="login-page">
 
-
-<h1><spring:message code="loginPage.login"></spring:message></h1>
-<div class="pull-right" style="padding-right: 50px">
-    <a href="?language=pl">Polski</a>|<a href="?language=en">English</a>
-</div>
-<!-- /login?error=true -->
-<c:if test="${param.error == 'true'}">
-    <div style="color:red;margin:10px 0px;">
-
-        <spring:message code="loginPage.loginFailed"></spring:message><br />
-        <spring:message code="loginPage.loginFailedReason"></spring:message> :  ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
-
+    <div class="form">
+        <img src="<c:url value="/resources/images/Amber.jpg"/>" class="img-thumbnail" style="width:50%">
+        <form class="login-form" name='form1' action="${pageContext.request.contextPath}/j_spring_security_check"
+              method='POST' id="form1">
+            <div class="form-group">
+                <label for="username"><spring:message code="loginPage.username"></spring:message></label>
+                <input type='text' name='username' id="username" value=''/>
+            </div>
+            <div class="form-group">
+                <label for="password"><spring:message code="loginPage.password"></spring:message></label>
+                <input type='password' name='password' id="password"/>
+            </div>
+            <button type="submit">
+                <spring:message code="loginPage.submit"></spring:message>
+            </button>
+        </form>
+        <c:if test="${param.error == 'true'}">
+            <div class="alert alert-danger">
+                    ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
+            </div>
+        </c:if>
     </div>
-</c:if>
-
-<h3><spring:message code="loginPage.usernameAndPassword"></spring:message></h3>
-
-<form name='f' action="${pageContext.request.contextPath}/j_spring_security_check" method='POST'>
-    <table>
-        <tr>
-            <td><spring:message code="loginPage.username"></spring:message></td>
-            <td><input type='text' name='username' value=''></td>
-        </tr>
-        <tr>
-            <td><spring:message code="loginPage.password"></spring:message></td>
-            <td><input type='password' name='password' /></td>
-        </tr>
-        <tr>
-            <td><input name="submit" type="submit" value="<spring:message code="loginPage.submit"></spring:message>" /></td>
-        </tr>
-    </table>
-</form>
+</div>
 </body>
 </html>

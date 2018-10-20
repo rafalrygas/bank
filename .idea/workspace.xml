@@ -7,35 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31ddbbae-46d1-4936-ae20-42902ecbc1f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/MailSenderConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserAccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/forms/MoneyTransferForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/MailSenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/MailSenderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferAcceptForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/transferList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/menuUser.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/AdminHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/AdminHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/SecurityCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/SecurityCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_pl.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menuUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menuUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/classes/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/classes/messages_en.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/classes/messages_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/classes/messages_pl.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/views/loginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/views/loginPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/views/menuUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/views/menuUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/views/moneyTransferForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringHibernateExample/WEB-INF/views/moneyTransferForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages_en.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/messages_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages_pl.properties" afterDir="false" />
     </list>
@@ -51,61 +50,70 @@
     <session id="1303758352">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.104" value="1" />
+          <entry key="project.open.time.108" value="1" />
           <entry key="project.open.time.113" value="1" />
+          <entry key="project.open.time.116" value="1" />
           <entry key="project.open.time.138" value="1" />
           <entry key="project.open.time.151" value="1" />
           <entry key="project.open.time.165" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.66" value="1" />
-          <entry key="project.open.time.67" value="1" />
+          <entry key="project.open.time.67" value="2" />
           <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.82" value="1" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.open.time.98" value="1" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="194" />
           <entry key="dummy" value="21" />
-          <entry key="java" value="11759" />
-          <entry key="jsp" value="2377" />
-          <entry key="properties" value="3143" />
-          <entry key="xml" value="15" />
+          <entry key="java" value="13570" />
+          <entry key="jsp" value="3277" />
+          <entry key="properties" value="3872" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11759" />
-          <entry key="JSP" value="2377" />
+          <entry key="CSS" value="194" />
+          <entry key="JAVA" value="13570" />
+          <entry key="JSP" value="3277" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Properties" value="3143" />
-          <entry key="XML" value="15" />
+          <entry key="Properties" value="3872" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
-          <entry key="java" value="589" />
-          <entry key="jsp" value="202" />
-          <entry key="properties" value="56" />
-          <entry key="xml" value="9" />
+          <entry key="css" value="4" />
+          <entry key="java" value="675" />
+          <entry key="jsp" value="250" />
+          <entry key="properties" value="65" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="JAVA" value="589" />
-          <entry key="JSP" value="202" />
-          <entry key="Properties" value="56" />
-          <entry key="XML" value="9" />
+          <entry key="CSS" value="4" />
+          <entry key="JAVA" value="675" />
+          <entry key="JSP" value="250" />
+          <entry key="Properties" value="65" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -114,14 +122,27 @@
     <favorites_list name="bank" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -138,12 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/UserRoleRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/UserRoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/message.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/message_pl.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userRoleForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ValidationMessages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/ValidationMessages_pl.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/ValidationMessages_en.properties" />
@@ -154,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/logoutSuccessfulPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/AdminHomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/AccountService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accountDetails.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/MethodSecurityConfig.java" />
@@ -166,29 +180,36 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Document.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menuUser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages_en.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages_pl.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Transfer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/forms/MoneyTransferForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserAccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/SecurityCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/MailSenderConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/MailSenderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/MailSenderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/menuUser.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/model/SecurityCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages_pl.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserAccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/transferList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/menuUser.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menuUser.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferAcceptForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java" />
       </list>
     </option>
   </component>
@@ -216,7 +237,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,6 +354,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bank" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bank" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,14 +386,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536092710423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536612844211" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -363,6 +401,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rafał\workspace\Bank\src\main\webapp\resources" />
+      <recent name="C:\Users\Rafał\workspace\Bank\src\main\resources" />
+      <recent name="C:\Users\Rafał\workspace\Bank\src\main\webapp\WEB-INF\css" />
+      <recent name="C:\Users\Rafał\workspace\Bank\src\main\resources\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Rafał\workspace\Bank\src\main\webapp\WEB-INF\views" />
     </key>
@@ -522,6 +566,12 @@
       <workItem from="1535901426260" duration="13649000" />
       <workItem from="1535981975096" duration="9153000" />
       <workItem from="1536075780171" duration="7658000" />
+      <workItem from="1536160554620" duration="11146000" />
+      <workItem from="1536253553909" duration="8948000" />
+      <workItem from="1536506348131" duration="13554000" />
+      <workItem from="1536593481825" duration="13667000" />
+      <workItem from="1536657660985" duration="1463000" />
+      <workItem from="1536664228599" duration="215000" />
     </task>
     <servers />
   </component>
@@ -537,7 +587,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204323000" />
+    <option name="totallyTimeSpent" value="253316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,8 +600,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-167" y="-1058" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23166259" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -563,14 +614,14 @@
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32890365" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49755502" weight="0.32890365" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49633253" weight="0.32890365" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32890365" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32890365" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502445" side_tool="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5036675" side_tool="true" weight="0.32890365" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32890365" />
@@ -595,147 +646,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/SpringSecurityInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/UserRoleRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accountDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/MethodSecurityConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/UserRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addUserRoleForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.0.6.RELEASE/spring-beans-4.0.6.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1593">
-          <caret line="1057" selection-start-line="1057" selection-end-line="1057" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="63" column="4" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6637#6638#0" expanded="true" />
-            <element signature="e#6682#6683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menuUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="74" selection-start-line="74" selection-end-line="81" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userform.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="152" column="69" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages_pl.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/AdminHomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="100" selection-start-line="100" selection-end-line="127" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,44 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/WelcomeLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="42" column="85" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Transfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1954">
-          <caret line="161" column="15" selection-start-line="161" selection-start-column="15" selection-end-line="161" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2483#2484#0" expanded="true" />
-            <element signature="e#2548#2549#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,33 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-295">
           <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -832,16 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="106" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -852,129 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserHomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="28" column="97" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="44" lean-forward="true" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserAccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="997">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/SecurityCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#309#332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/HibernateConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -988,6 +712,262 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/SpringSecurityInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/SecurityCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addUserRoleForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/WelcomeLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menuAdmin.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/403Page.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/HibernateConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/AdminHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="175" column="132" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="175" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accountDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages_en.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="91" selection-start-line="91" selection-end-line="102" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages_pl.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="78" column="45" lean-forward="true" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/AccountRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/controller/UserAccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="102" column="80" selection-start-line="102" selection-start-column="80" selection-end-line="102" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1145">
+          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/model/Transfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/transferList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/menuUser.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="182" column="21" selection-start-line="182" selection-start-column="21" selection-end-line="182" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userform.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3196">
+          <caret line="188" column="8" lean-forward="true" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userRole.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/moneyTransferAcceptForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="84" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menuUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1502">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/MailSenderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -995,55 +975,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/config/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="176" column="21" selection-start-line="176" selection-start-column="21" selection-end-line="176" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/SecurityCodeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/MailSenderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="221">
           <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/service/TransferServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/SecurityCodeRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="289">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafal/bank/repository/TransferRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
           </folding>
         </state>
       </provider>

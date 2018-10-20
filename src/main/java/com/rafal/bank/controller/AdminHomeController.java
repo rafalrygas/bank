@@ -55,7 +55,7 @@ public class AdminHomeController {
 
         User user = userService.getUserByUsername(username);
         if (user == null) {
-            model.addAttribute("css", "danger");
+            model.addAttribute("resources/css", "danger");
             model.addAttribute("msg",
                     messageSource.getMessage("adminHomeController.userNotFound", null, LocaleContextHolder.getLocale()));
         }
@@ -82,7 +82,7 @@ public class AdminHomeController {
         System.out.println("User deleting");
         userService.delete(username);
 
-        redirectAttributes.addFlashAttribute("css", "success");
+        redirectAttributes.addFlashAttribute("resources/css", "success");
         redirectAttributes.addFlashAttribute("msg",
                 messageSource.getMessage("adminHomeController.userDeletedSuccessfully", null, LocaleContextHolder.getLocale()));
 
@@ -109,7 +109,7 @@ public class AdminHomeController {
         } else {
 
             // Add message to flash scope
-            redirectAttributes.addFlashAttribute("css", "success");
+            redirectAttributes.addFlashAttribute("resources/css", "success");
             if (user.isNew()) {
                 redirectAttributes.addFlashAttribute("msg",
                         messageSource.getMessage("adminHomeController.userAddedSuccessfully", null, LocaleContextHolder.getLocale()));
@@ -171,7 +171,7 @@ public class AdminHomeController {
 
         userRoleService.delete(userRoleId);
 
-        redirectAttributes.addFlashAttribute("css", "success");
+        redirectAttributes.addFlashAttribute("resources/css", "success");
         redirectAttributes.addFlashAttribute("msg",
                 messageSource.getMessage("adminHomeController.userRoleDeletedSuccessfully", null, LocaleContextHolder.getLocale()));
 

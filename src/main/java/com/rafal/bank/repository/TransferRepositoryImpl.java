@@ -1,5 +1,6 @@
 package com.rafal.bank.repository;
 
+import com.rafal.bank.model.Account;
 import com.rafal.bank.model.Transfer;
 import com.rafal.bank.model.User;
 import org.hibernate.SessionFactory;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Set;
 
 @Repository
 public class TransferRepositoryImpl implements TransferRepository{
@@ -53,5 +55,14 @@ public class TransferRepositoryImpl implements TransferRepository{
                 .list();
         System.out.println(transfers.get(0).getId());
         sessionFactory.getCurrentSession().delete(transfers.get(0));
+    }
+
+    @Override
+    public List<Transfer> getTransfersByAccountNumber(Account accountNumber) {
+        List<Transfer> transfers = sessionFactory.getCurrentSession()
+                .createQuery("from Transfer where accountSender=? or accountRecipient=?")
+                .setParameter(0, accountNumber).setParameter(1,accountNumber)
+                .list();
+        return transfers;
     }
 }

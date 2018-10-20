@@ -6,13 +6,15 @@ public class SecurityCode {
 
     private String code;
     private LocalDateTime timeExpired;
+    private int attempts;
 
     public SecurityCode() {
     }
 
-    public SecurityCode(String code, LocalDateTime timeExpired) {
+    public SecurityCode(String code, LocalDateTime timeExpired, int attempts) {
         this.code = code;
         this.timeExpired = timeExpired;
+        this.attempts = attempts;
     }
 
     public String getCode() {
@@ -31,11 +33,20 @@ public class SecurityCode {
         this.timeExpired = timeExpired;
     }
 
+    public int getAttempts() {
+        return attempts;
+    }
+
+    public void setAttempts(int attempts) {
+        this.attempts = attempts;
+    }
+
     @Override
     public String toString() {
         return "SecurityCode{" +
                 "code='" + code + '\'' +
                 ", timeExpired=" + timeExpired +
+                ", attempts=" + attempts +
                 '}';
     }
 }

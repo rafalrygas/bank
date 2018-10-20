@@ -11,4 +11,12 @@ public class SecurityCodeRepositoryImpl implements SecurityCodeRepository {
 
     private Map<Integer, SecurityCode> securityCodeMap = new HashMap<Integer, SecurityCode>();
 
+    public SecurityCode getItem(Integer id) {
+        return securityCodeMap.get(id);
+    }
+
+    public void saveItem(Integer id, SecurityCode securityCode) {
+        securityCodeMap.put(id, securityCode);
+    }
+
 }

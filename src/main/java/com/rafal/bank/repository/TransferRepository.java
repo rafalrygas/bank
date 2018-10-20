@@ -1,8 +1,10 @@
 package com.rafal.bank.repository;
 
+import com.rafal.bank.model.Account;
 import com.rafal.bank.model.Transfer;
 
 import java.util.List;
+
 
 public interface TransferRepository {
     Transfer findById(Integer id);
@@ -14,4 +16,6 @@ public interface TransferRepository {
     void update(Transfer transfer);
 
     void delete(Integer id);
+
+    List<Transfer> getTransfersByAccountNumber(Account account);
 }
